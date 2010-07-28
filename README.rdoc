@@ -13,11 +13,11 @@ Install the gem with
 To use the CucumberSpinner formatter, call cucumber with the following command
 line option:
     
-    --formatter CucumberSpinner::ProgressBarFormatter --require cucumber_spinner
+    --format CucumberSpinner::ProgressBarFormatter
 
 You might want to use an alias, so for example put this at the end of your
 .bashrc
-    alias cuc='script/cucumber --formatter CucumberSpinner::ProgressBarFormatter --require cucumber_spinner'
+    alias cuc='script/cucumber --format CucumberSpinner::ProgressBarFormatter'
 and then start your features with
     cuc features
 
@@ -42,7 +42,7 @@ The Gem is inspired and based on nofxx's RSpecSpinner gem
 (http://github.com/nofxx/rspec_spinner), which is in turn based on the Advanced Progress Bar by Nicholas A. Evans.
 
 
-- Tobias Kraze
+by Tobias Kraze
 
 {makandra.com}[http://makandra.com/]
 

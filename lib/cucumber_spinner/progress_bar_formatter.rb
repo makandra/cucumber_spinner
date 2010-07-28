@@ -12,7 +12,7 @@ module CucumberSpinner
     def initialize(step_mother, path_or_io, options)
       @step_mother, @io, @options = step_mother, ensure_io(path_or_io, "progress"), options
       @error_state = :passed
-      @coloured_io = FormattedIo.new(@io)
+      @coloured_io = CucumberSpinner::FormattedIo.new(@io)
       @coloured_io.status = @error_state
       @pretty_printer_io = StringIO.new
       @pretty_printer = Cucumber::Formatter::Pretty.new(step_mother, @pretty_printer_io, options)
