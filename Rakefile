@@ -24,7 +24,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "cucumber_spinner"
-    gemspec.version = '0.1.1'
+    gemspec.version = '0.1.2'
     gemspec.summary = "Progress bar formatter for cucumber, shows failing scenarios immediately."
     gemspec.email = "tobias.kraze@makandra.de"
     gemspec.homepage = "http://github.com/makandra/cucumber_spinner"

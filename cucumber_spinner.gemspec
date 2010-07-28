@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cucumber_spinner}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobias Kraze"]
@@ -16,14 +16,17 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    "MIT-LICENSE",
+    ".gitignore",
+     "MIT-LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
      "cucumber_spinner.gemspec",
      "lib/cucumber_spinner.rb",
      "lib/cucumber_spinner/formatted_io.rb",
-     "lib/cucumber_spinner/progress_bar_formatter.rb"
+     "lib/cucumber_spinner/progress_bar_formatter.rb",
+     "pkg/cucumber_spinner-0.1.1.gem",
+     "pkg/cucumber_spinner-0.1.gem"
   ]
   s.homepage = %q{http://github.com/makandra/cucumber_spinner}
   s.rdoc_options = ["--charset=UTF-8"]

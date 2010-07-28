@@ -1,3 +1,4 @@
+require 'cucumber_spinner/formatted_io'
 require 'cucumber/formatter/io'
 require 'cucumber/formatter/pretty'
 require 'rtui'
