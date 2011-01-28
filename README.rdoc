@@ -6,7 +6,13 @@ once, not at the end of your feature run.
 
 == Installation
 
-If you are using Bundler, add the +cucumber_spinner+ to your +Gemfile+ and run
+If you are using Bundler, add the gem to your +Gemfile+:
+
+    group :cucumber do
+      gem 'cucumber_spinner'
+    end
+
+Now run
 
     bundle install
 
