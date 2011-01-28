@@ -28,7 +28,7 @@ begin
     gemspec.summary = "Progress bar formatter for cucumber, shows failing scenarios immediately."
     gemspec.email = "tobias.kraze@makandra.de"
     gemspec.homepage = "http://github.com/makandra/cucumber_spinner"
-    gemspec.description = "Formatter for cucumber like the RSpecSpinner for RSpec. Shows a progress bar on the command line and prints failing scenarios immediately."
+    gemspec.description = "Formatter for cucumber like the RSpecSpinner for RSpec. Shows a progress bar on the command line, prints failing scenarios immediately and can automatically show a browser dump of the error page."
     gemspec.authors = ["Tobias Kraze"]
     gemspec.add_dependency('rtui', '>=0.2.2')
   end

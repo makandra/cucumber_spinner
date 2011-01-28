@@ -31,12 +31,8 @@ module CucumberSpinner
 
       case status
       when :pending: pending!
-      when :failed: 
-        failed!
-        print_scenario
-      when :undefined: 
-        undefined!
-        print_scenario
+      when :failed: failed!
+      when :undefined: undefined!
       end
     end
 
@@ -140,10 +136,12 @@ module CucumberSpinner
 
     def undefined!
       @error_state = :undefined unless @error_state == :failed
+      print_scenario
     end
 
     def failed!
       @error_state = :failed
+      print_scenario
     end
 
     def with_color
