@@ -8,28 +8,28 @@ once, not at the end of your feature run.
 
 If you are using Bundler, add the gem to your +Gemfile+:
 
-    group :cucumber do
-      gem 'cucumber_spinner'
-    end
+  group :cucumber do
+    gem 'cucumber_spinner'
+  end
 
 Now run
 
-    bundle install
+  bundle install
 
 If you are not on Bundler you can download the gem manually:
 
-    sudo gem install cucumber_spinner
+  sudo gem install cucumber_spinner
 
 To use the CucumberSpinner formatter, call cucumber with the following command
 line option:
     
-    cucumber --format CucumberSpinner::ProgressBarFormatter
+  cucumber --format CucumberSpinner::ProgressBarFormatter
 
 You might want to use an alias, so for example put this at the end of your
 .bashrc
-    alias cuc='script/cucumber --format CucumberSpinner::ProgressBarFormatter'
+  alias cuc='script/cucumber --format CucumberSpinner::ProgressBarFormatter'
 and then start your features with
-    cuc features
+  cuc features
 
 Alternatively, you can require 'cucumber_spinner' in your cucumber environment,
 and modify your config/cucumber.yml.
@@ -43,7 +43,7 @@ write a `Then show me the page` right before the failing scenario step, but it h
 
 To use this formatter, call cucumber like this:
 
-    cucumber --format CucumberSpinner::CuriousProgressBarFormatter
+  cucumber --format CucumberSpinner::CuriousProgressBarFormatter
 
 
 == Caveats
