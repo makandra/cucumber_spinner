@@ -6,14 +6,18 @@ once, not at the end of your feature run.
 
 == Installation
 
-Install the gem with
+If you are using Bundler, add the +cucumber_spinner+ to your +Gemfile+ and run
+
+    bundle install
+
+If you are not on Bundler you can download the gem manually:
 
     sudo gem install cucumber_spinner
 
 To use the CucumberSpinner formatter, call cucumber with the following command
 line option:
     
-    --format CucumberSpinner::ProgressBarFormatter
+    cucumber --format CucumberSpinner::ProgressBarFormatter
 
 You might want to use an alias, so for example put this at the end of your
 .bashrc
@@ -25,16 +29,27 @@ Alternatively, you can require 'cucumber_spinner' in your cucumber environment,
 and modify your config/cucumber.yml.
 
 
-=== Caveats
+== Always show the error page in the browser
 
-This has only been tested on cucumber 0.8.3 and ruby 1.8.7. Since cucumber does
+CucumberSpinner comes with another formatter that works like above, but in addition opens
+the page in your browser whenever there is an error. The effect is the same if you
+write a `Then show me the page` right before the failing scenario step, but it happens automagically.
+
+To use this formatter, call cucumber like this:
+
+    cucumber --format CucumberSpinner::CuriousProgressBarFormatter
+
+
+== Caveats
+
+This has only been tested on cucumber 0.8.3 to 0.9.4 and ruby 1.8.7. Since Cucumber does
 not expose every information we need (like the total number of steps) cleanly,
-this might easily break for other cucumber versions.
+this might easily break for other Cucumber versions.
 
 There are currently no tests either.
 
 
-=== Credits
+== Credits
 
 Licensed under the MIT License.
 
