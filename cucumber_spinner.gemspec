@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
      "MIT-LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION",
      "cucumber_spinner.gemspec",
      "lib/cucumber_spinner.rb",
      "lib/cucumber_spinner/curious_progress_bar_formatter.rb",
