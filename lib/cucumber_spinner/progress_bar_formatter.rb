@@ -30,9 +30,9 @@ module CucumberSpinner
       increment
 
       case status
-      when :pending: pending!
-      when :failed: failed!
-      when :undefined: undefined!
+      when :pending then pending!
+      when :failed then failed!
+      when :undefined then undefined!
       end
     end
 
