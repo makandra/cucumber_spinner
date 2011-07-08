@@ -36,6 +36,11 @@ module CucumberSpinner
       end
     end
 
+    def after_table_row(row)
+      increment
+      @pretty_printer.after_table_row(row)
+    end
+
     def after_features(features)
       @io.puts
       @io.puts
@@ -56,7 +61,7 @@ module CucumberSpinner
         end
       end
     end
-    delegate_to_pretty_printer :before_feature, :comment_line, :after_tags, :tag_name, :feature_name, :after_feature_element, :before_background, :after_background, :background_name, :before_examples_array, :examples_name, :before_outline_table, :after_outline_table, :scenario_name, :before_step, :before_step_result, :step_name, :py_string, :exception, :before_multiline_arg, :after_multiline_arg, :before_table_row, :after_table_row, :after_table_cell, :table_cell_value
+    delegate_to_pretty_printer :before_feature, :comment_line, :after_tags, :tag_name, :feature_name, :after_feature_element, :before_background, :after_background, :background_name, :before_examples_array, :examples_name, :before_outline_table, :after_outline_table, :scenario_name, :before_step, :before_step_result, :step_name, :py_string, :exception, :before_multiline_arg, :after_multiline_arg, :before_table_row, :after_table_cell, :table_cell_value
 
 
     private
