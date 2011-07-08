@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cucumber_spinner}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobias Kraze"]
-  s.date = %q{2011-02-01}
+  s.date = %q{2011-07-08}
   s.description = %q{Formatter for cucumber like the RSpecSpinner for RSpec. Shows a progress bar on the command line, prints failing scenarios immediately and can automatically show a browser dump of the error page.}
   s.email = %q{tobias.kraze@makandra.de}
   s.extra_rdoc_files = [
@@ -26,17 +26,17 @@ Gem::Specification.new do |s|
      "lib/cucumber_spinner/curious_progress_bar_formatter.rb",
      "lib/cucumber_spinner/formatted_io.rb",
      "lib/cucumber_spinner/progress_bar_formatter.rb",
+     "lib/cucumber_spinner/time_judge.rb",
      "pkg/cucumber_spinner-0.1.1.gem",
      "pkg/cucumber_spinner-0.1.gem"
   ]
   s.homepage = %q{http://github.com/makandra/cucumber_spinner}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.5.0}
   s.summary = %q{Progress bar formatter for cucumber, shows failing scenarios immediately.}
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
