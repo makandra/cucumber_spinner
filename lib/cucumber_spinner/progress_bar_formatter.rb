@@ -39,6 +39,9 @@ module CucumberSpinner
     def after_table_row(row)
       increment
       @pretty_printer.after_table_row(row)
+      if row.exception
+        failed!
+      end
     end
 
     def after_features(features)
