@@ -6,6 +6,7 @@ Gem::Specification.new do |gem|
   gem.name = %q{cucumber_spinner}
   gem.authors = ["Tobias Kraze"]
   gem.description = %q{Formatter for cucumber like the RSpecSpinner for RSpec. Shows a progress bar on the command line, prints failing scenarios immediately and can automatically show a browser dump of the error page.}
+  gem.summary = gem.description
   gem.email = %q{tobias.kraze@makandra.de}
 
   gem.files         = `git ls-files`.split($\)
