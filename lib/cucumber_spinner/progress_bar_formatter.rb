@@ -26,7 +26,7 @@ module CucumberSpinner
       @progress_bar = RTUI::Progress.new("#{@total} steps", @total, {:out => @coloured_io})
     end
 
-    def after_step_result(keyword, step_match, multiline_arg, status, exception, source_indent, background)
+    def after_step_result(*)
       increment
 
       case status
