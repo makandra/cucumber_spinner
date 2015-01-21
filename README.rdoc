@@ -1,5 +1,9 @@
 = CucumberSpinner
 
+*This project is no longer maintained*
+
+---
+
 CucumberSpinner is a formatter for Cucumber. It allows you to show the progress
 of your running features as a progress bar. Failing features are outputted at
 once, not at the end of your feature run.
