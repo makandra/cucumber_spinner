@@ -1,6 +1,8 @@
 = CucumberSpinner
 
-*This project is no longer maintained*
+---
+
+<b>This project is no longer maintained!</b>
 
 ---
 
